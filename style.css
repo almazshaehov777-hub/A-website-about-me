@@ -1,0 +1,1139 @@
+/*ПК*/
+@media (min-width: 1024px){
+/*Main Page, PC*/
+#logo {
+  text-decoration:none;
+  color:white;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: -webkit-linear-gradient(top, white, #5d5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navigation{
+    text-decoration: none;
+    font-size: 20px;
+    color: #9c9c9c;
+    margin-left: 25px;
+    float: right;
+}
+.navigation:hover{
+    animation: navAnim 0.25s;
+    animation-fill-mode: forwards;
+}
+.bg{
+    background-color: black;
+    padding: 25px;
+    border: 2px double #4a4a4a;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+.desktop{
+    display:block;
+}
+.mobile{
+    display: none;
+}
+
+
+@keyframes navAnim{
+    0%{
+        font-size: 20px;
+        color: #9c9c9c;
+    }
+    100%{
+        font-size: 21px;
+        color: white;
+    }
+}
+@keyframes startAnim{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 100%;
+    }
+}
+@keyframes listAnimA{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes divAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+@keyframes nameAnim{
+    0%{
+        opacity: 0;
+        margin-top: 5%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes listAnimation{
+    0%{
+        opacity: 0;
+        margin-top: 10%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+@keyframes projAnim{
+    0%{
+        opacity: 0;
+        margin-top: 15%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+@keyframes helpAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes cardAnim{
+    0%{
+        margin-top: 100px;
+        background:#919191;
+    }
+    100%{
+        margin-top: 30px;
+        background: white;
+    }
+}
+
+
+.name{
+    color:#44fe45;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: rgb(25,25,25);
+}
+#start{
+    color: white;
+    font-size: 24px;
+    float: right;
+    padding: 25px;
+    background: #2e2e2e;
+    margin-top: 10%;
+    opacity: 0;
+    animation: startAnim 1.5s ease;
+    animation-fill-mode: forwards;
+    border-radius: 7px;
+    margin-left: 53%;
+}
+#lastName{
+    background: -webkit-linear-gradient(top, white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#imageStart{
+    clip-path: polygon(50% 100%, 10% 100%, 50% 0%, 120% 15%);
+    animation: startAnim 2.5s ease;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: -1%;
+    left: -5%;
+    display:block;
+}
+#bgfooter{
+    background: black;
+    margin-top: auto;
+    height: 80px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+}
+.socialNet{
+    width: 35px;
+    height: 35px;
+    float:right;
+    margin-top: -25px;
+    margin-right: 5px;
+}
+#indexInfoList{
+    color: white;
+    font-size: 24px;
+    float: right;
+    margin-right: 10px;
+}
+.indexInfoListCL{
+    padding: 25px;
+    background: #2e2e2e;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+#list1D{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#list2D{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 2.25s ease;
+    animation-fill-mode: forwards;
+}
+#list3D{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 3s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+/*MeInfo, desktop*/
+h1{
+    color: white;
+    animation: startAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#selText{
+    display: flex;
+    justify-content: center;
+}
+#distD{
+    display: inline-block;
+    color: white;
+    margin-top: 40px;
+    font-size: 28px;
+    background: #2e2e2e;
+    padding: 25px;
+    border-radius: 7px;;
+    animation: divAnim 2.5s ease;
+    animation-fill-mode: forwards;
+}
+.greenD{
+    color:#44fe45;
+}
+h2{
+    color: white;
+}
+#langProgD{
+    display: flex;
+}
+#cppD, #csD, #RUD, #END, #JPD{
+    height: 350px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#cppD>img, #csD>img{
+    width: 70px;
+    height: 70px;
+}
+#cppD{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+#csD{
+    background: #a31aff;
+}
+#RUD{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: 260%;
+}
+#END{
+    background-image: url("EN.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#JPD{
+    background-image: url("JP.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#cppD>img, #csD>img{
+    position: relative;
+    left: 33%;
+    top: 35%;
+}
+#nameLangProg{
+    display: flex;
+    color: white;
+}
+.nameLang{
+    margin-right: 20px;
+    flex: 1;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+#nameCpp{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+#nameCs{
+    background: #a31aff;
+}
+#nameRUS{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+#nameEN{
+    background: #3a365d;
+}
+#nameJP{
+    background: white;
+    color: black;
+}
+#containerLang{
+    display: flex;
+}
+.langRate{
+    color: white;
+    margin-right: 20px;
+    height: 40px;
+    margin-top: 10px;
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+#cppRate{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+#csRate{
+    background: #a31aff;
+}
+#RUSRate{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+#ENRate{
+    background: #3a365d;
+}
+#JPRate{
+    color: black;
+    background: white;
+}
+
+#cppD, #cppRate{
+    animation: divAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#csD, #csRate{
+    animation: divAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#RUD, #RUSRate{
+    animation: divAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#END, #ENRate{
+    animation: divAnim 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#JPD, #JPRate{
+    animation: divAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#nameCpp{
+    animation: nameAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#nameCs{
+    animation: nameAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#nameRUS{
+    animation: nameAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#nameEN{
+    animation: nameAnim 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#nameJP{
+    animation: nameAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+h2{
+    animation: listAnimation 2s ease;
+    animation-fill-mode: forwards;
+}
+.containerInfo{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.cardInfo{
+    flex: 1;
+    height: 300px;
+    background: #424242;
+    margin-top: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 10px;
+    color: #919191;
+    border: 4px solid black;
+    transition: .3s all ease;
+}
+.cardInfo>b{
+    margin-left: 20px;
+    font-size: 24px;
+}
+.cardInfo>img{
+    position: relative;
+    left: 3%;
+    top: 5%;
+}
+.cardInfo>p{
+    font-size: 26px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: FreeMono, monospace;
+}
+.containerInCard{
+    display: flex;
+    width: 100%;
+}
+.cardInCard{
+    flex: 1;
+    height: 20px;
+    background: #7a7a7a;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: auto;
+    text-align: center;
+    border: 2.5px solid black;
+    color: white;
+}
+.cardInfo:hover{
+    background: #e3e3e3;
+    margin-top: 60px;
+    color: black;
+    box-shadow: 0 12px 36px rgba(192, 192, 192, 0.2);
+}
+
+
+
+
+
+
+/*Portfolio, desktop*/
+.cardcontainer{
+    display: flex;
+}
+.cardD{
+    display: flex;
+    flex: 1;
+    transition: .3s all ease;
+    height: 100px;
+    background: gray;
+    margin-left: 15px;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 30px;
+    animation: projAnim 2s;
+    animation-fill-mode: forwards;
+}
+#lastCard{
+    margin-right: 15px;
+}
+.cardD:hover{
+    flex: 2;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#portfoliofooter{
+    min-height: 90vh;
+}
+
+
+
+
+
+/*Achivment, desktop*/
+#listAchivmentsD{
+    color: white;
+    font-size: 24px;
+}
+#listAch1D, #listAch3D{
+    background: #5d5b5b;
+}
+#listAch1D{
+    animation: projAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#listAch2D{
+    margin-top: 60px;
+    margin-left: 70px;
+    background: #3a3a3a;
+    animation: projAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#listAch3D{
+    margin-top: 60px;
+    animation: projAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#listAch1D, #listAch2D, #listAch3D{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+#URLcon{
+    text-align: center;
+}
+#ZamaCode{
+    background: #4a4a4a;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    font-size: 22px;
+    transition: .4s;
+    animation: nameAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#ZamaCode:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+/*help, desktop*/
+form{
+    text-align: center;
+}
+#buttonSubmit{
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    animation: helpAnim 2s;
+    animation-fill-mode: forwards;
+}
+#nameText{
+    width: 200px;
+    border-radius: 3px;
+    animation: helpAnim 1s;
+    animation-fill-mode: forwards;
+}
+#textHelp{
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    animation: helpAnim 1.5s;
+    animation-fill-mode: forwards;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*телефоны*/
+@media(max-width: 576px){
+html{
+    display:block;
+}
+
+#logo {
+  text-decoration:none;
+  color:white;
+  font-family: sans-serif;
+  font-size: 18px;
+  background: -webkit-linear-gradient(white, #5d5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.desktop{
+    display:none;
+}
+.mobile{
+    display: block;
+}
+.navigation{
+    text-decoration: none;
+    font-size: 16px;
+    color: #9c9c9c;
+    margin-left: 25px;
+    float: right;
+}
+.navigation:hover{
+    animation: navAnim 0.25s;
+    animation-fill-mode: forwards;
+}
+.bg{
+    background-color: black;
+    padding: 35px;
+    border: 2px double #4a4a4a;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@keyframes navAnim{
+    0%{
+        font-size: 16px;
+        color: #9c9c9c;
+    }
+    100%{
+        font-size: 17px;
+        color: white;
+    }
+}
+@keyframes startAnim{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 100%;
+    }
+}
+@keyframes selAnim{
+    0%{
+        color: #9c9c9c;
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes listAnim1{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes listAnim2{
+    0%{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes listAnim3{
+    0%{
+        margin-top: 30%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes portAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 7%;
+    }
+}
+@keyframes achivmentsAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 5%;
+    }
+}
+@keyframes h2Anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes startAnim2{
+    0%{
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 25px;
+    }
+}
+@keyframes h2ZAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 15px;
+    }
+}
+@keyframes langProg{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes lang{
+    0%{
+        opacity: 0;
+        margin-top: 20%
+    }
+    100%{
+        opacity: 0.9;
+        margin-top: 0;
+    }
+}
+@keyframes textAnim{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes textHelpAnim{
+    0%{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 20px;
+        opacity: 1;
+    }
+}
+
+
+.name{
+    color:#44fe45;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: rgb(25,25,25);
+}
+#start{
+    color: white;
+    font-size: 20px;
+    float: right;
+    padding: 25px;
+    background: #2e2e2e;
+    margin-top: 10%;
+    margin-left: 5px;
+    opacity: 0;
+    animation: startAnim 1.5s ease;
+    animation-fill-mode: forwards;
+    border-radius: 7px;
+    display: inline;
+}
+#lastName{
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#imageStartMobile{
+    clip-path: polygon(40% 100%, -50% 50%, 25% 0%, 60% 7.5%, 80% 50%);
+    animation: startAnim 2.5s ease;
+    animation-fill-mode: forwards;
+    width: 80%;
+    height: 80%;
+}
+#bgfooter{
+    background: black;
+    margin-top: auto;
+    height: 80px;
+}
+#indexfooter{
+    display: flex;
+    flex-direction: column;
+    min-height: 49vh;
+    width: 100%;
+}
+.socialNet{
+    width: 35px;
+    height: 35px;
+    float:right;
+    margin-top: -30px;
+    margin-right: 5px;
+}
+#selnav{
+    float: right;
+    font-size: 16px;
+    background: black;
+    color: #9c9c9c;
+    border-radius: 5px;
+}
+#selnav:hover{
+    animation: selAnim 0.4s;
+    animation-fill-mode: forwards;
+}
+.list{
+    color: white;
+    white-space: nowrap;
+    font-size: 20px;
+    background: #2e2e2e;
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 7px;
+    opacity: 0;
+}
+#listAll{
+    display: inline-block;
+}
+#list1{
+    animation: listAnim1 0.75s;
+    animation-fill-mode: forwards;
+}
+#list2{
+    animation: listAnim2 1s;
+    animation-fill-mode: forwards;
+}
+#list3{
+    animation: listAnim3 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*Mobile, Portfolio*/
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    animation: portAnim 1.5s;
+    animation-fill-mode: forwards;
+}
+.cardcontainer{
+    display: flex;
+}
+.card{
+    background: gray;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border-radius: 12px;
+    flex: 1;
+    transition: .3s all ease;
+    animation: portAnim 2s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
+    flex: 2;
+    background: white;
+}
+#lastCard{
+    margin-right: 10px;
+}
+#portfoliofooter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 79vh;
+}
+#firstCard>b, #cardMid>b, #lastCard>b{
+    color: white;
+}
+#firstCard:hover>b{
+    animation: textAnim 0.3s ease;
+    animation-fill-mode: forwards;
+}
+#cardMid:hover>b{
+    animation: textAnim 0.3s ease;
+    animation-fill-mode: forwards;
+}
+#lastCard:hover>b{
+    animation: textAnim 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*Достижения, Mobile*/
+#listAchivments{
+    color: white;
+    font-size: 20px;
+}
+#listAchivments>li{
+    background: gray;
+    padding: 20px;
+    margin-right: 90px;
+    border-radius: 7px;
+}
+#listAchivments>p{
+    margin-left: 20px;
+    background: #4a4a4a;
+    margin-right: 25px;
+    padding: 15px;
+    border-radius: 7px;
+}
+#listAch1{
+    animation: achivmentsAnim 1s;
+    animation-fill-mode: forwards;
+}
+#listAch2{
+    animation: achivmentsAnim 1.25s;
+    animation-fill-mode: forwards;
+}
+#listAch3{
+    animation: achivmentsAnim 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*MeInfo, mobile*/
+#dist{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+h2{
+    color: white;
+}
+#listDist{
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+}
+#cpp{
+    background: #67b0fe;
+    animation: langProg 1s ease;
+    animation-fill-mode: forwards;
+}
+#cs{
+    background: #a31aff;
+    animation: langProg 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#langProg{
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+}
+#cs>img, #cpp>img{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 7px;
+    left: 0px;
+}
+#RU, #EN, #JP, #cpp, #cs{
+    position: relative;
+    margin-left: 10px;
+    border-radius: 7px;
+    height: 117px;
+    color: black;
+    margin-top: 20%;
+    opacity: 0;
+    flex: 1;
+}
+#RU{
+    background-image: url("RU.png");
+    background-size: cover;
+    animation: lang 2s ease;
+    animation-fill-mode: forwards;
+}
+#EN{
+    background-image: url("EN.jpg");
+    background-position: center;
+    background-size: 235%;
+    animation: lang 2.5s ease;
+    animation-fill-mode: forwards;
+}
+#JP{
+    background-image: url("JP.jpg");
+    background-position: center;
+    background-size: 226.5%;
+    margin-right: 15px;
+    animation: lang 3s ease;
+    animation-fill-mode: forwards;
+}
+#RU>b, #EN>b, #JP>b{
+    position: relative;
+    top: 39%;
+}
+#h2Z{
+    margin-top: 15px;
+    animation: h2ZAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#meInfoList1{
+    animation: listAnim1 1.25s ease;
+    animation-fill-mode: forwards;
+    padding: 25px;
+    border-radius: 7px;
+    background: #7a7a7a;
+    margin-right: 90px;
+}
+#meInfoList2{
+    animation: listAnim1 1.5s ease;
+    animation-fill-mode: forwards;
+    padding: 20px;
+    border-radius: 7px;
+    background: #7a7a7a;
+    margin-right: 90px;
+}
+#meInfoList3{
+    animation: listAnim1 1.75s ease;
+    animation-fill-mode: forwards;
+    padding: 20px;
+    border-radius: 7px;
+    background: #7a7a7a;
+    margin-right: 90px;
+}
+#dist{
+    font-size: 24px;
+    float: right;
+    background: #7a7a7a;
+    padding: 25px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    animation: startAnim2 2s ease;
+    animation-fill-mode: forwards;
+}
+#mainWork{
+    opacity: 0;
+    animation: h2Anim 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*help, Mobile*/
+form{
+    text-align: center;
+}
+.textHelp{
+    border-radius: 7px;
+}
+#buttonSubmit{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background: #969696;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;;
+    animation: langProg 2s;
+    animation-fill-mode: forwards;
+}
+#namePar{
+    margin-top: 40px;
+    animation: textHelpAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#textPar{
+    margin-bottom: 0px;
+    animation: textHelpAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#nameText{
+    width: 40%;
+    height: 20px;
+    animation: langProg 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#textHelp{
+    width: 60%;
+    height: 30px;
+    margin-bottom: 30px;
+    animation: langProg 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#helpfooter{
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    width: 100%;
+}
+}

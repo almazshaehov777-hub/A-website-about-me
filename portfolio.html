@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <header>
+    <div class="desktop">
+    <div class="bg">
+      <nav>
+        <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+
+        <a href="help.html" class="navigation"><b>Связаться</b></a>
+        <a href="achivments.html" class="navigation"><b>Достижения</b></a>
+        <a href="portfolio.html" class="navigation"><b>Портфолио</b></a>
+        <a href="MeInfo.html" class="navigation"><b>Обо мне</b></a>
+        <a href="index.html" class="navigation"><b>Главная страница</b></a>
+      </nav>
+    </div>
+    </div>
+
+
+      <div class="mobile">
+        <div class="bg">
+        <nav>
+          <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+        <select id="selnav" onchange="location.href=this.value">
+          <option value="index.html">Главная страница</option>
+          <option value="MeInfo.html">Обо мне</option>
+          <option value="portfolio.html" selected>Портфолио</option>
+          <option value="achivments.html">Достижение</option>
+          <option value="help.html">Связаться</option>
+        </select>
+        </nav>
+        </div>
+      </div>
+  </header>
+  
+  <main>
+  <div class="mobile">
+    <h1 align="center">Портфолио</h1>
+
+    <div class="cardcontainer">
+      <div class="card" id="firstCard"><b>Audio-Player</b></div>
+      <div class="card" id="cardMid"><b>Registrate-window</b></div>
+      <div class="card" id="lastCard"><b>Memory++</b></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="desktop">
+    <h1 align="center">Портфолио</h1>
+
+    <div class="cardcontainer">
+      <div class="cardD">Audio-Player</div>
+      <div class="cardD">Registrate-window</div>
+      <div class="cardD" id="lastCard">Memory++</div>
+    </div>
+  </div>
+  </main>
+  
+  <footer id="portfoliofooter">
+    <div id="bgfooter">
+      <p style="color:#666666; font-size: 16px; margin-left: 10px">все права защищены</p>
+        <a href="https://github.com/almazshaehov777-hub" target="_blank"><img src="github.png" class="socialNet"></a>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

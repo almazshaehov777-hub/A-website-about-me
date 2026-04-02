@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <header>
+    <div class="desktop">
+    <div class="bg">
+      <nav>
+        <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+
+        <a href="help.html" class="navigation"><b>Связаться</b></a>
+        <a href="achivments.html" class="navigation"><b>Достижения</b></a>
+        <a href="portfolio.html" class="navigation"><b>Портфолио</b></a>
+        <a href="MeInfo.html" class="navigation"><b>Обо мне</b></a>
+        <a href="index.html" class="navigation"><b>Главная страница</b></a>
+      </nav>
+    </div>
+    </div>
+
+
+      <div class="mobile">
+        <div class="bg">
+        <nav>
+          <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+        <select id="selnav" onchange="location.href=this.value" value="index.html">
+          <option value="index.html">Главная страница</option>
+          <option value="MeInfo.html">Обо мне</option>
+          <option value="portfolio.html">Портфолио</option>
+          <option value="achivments.html" selected>Достижение</option>
+          <option value="help.html">Связаться</option>
+        </select>
+        </nav>
+        </div>
+      </div>
+  </header>
+  
+  <main>
+    <div class="mobile">
+    <h1 align="center" >Достижения</h1>
+    <ol id="listAchivments">
+    <li id="listAch1">2 место на олимпиаде ZamaCode</li>
+    <p id="listAch2">ZamaCode - олимпиада по Республике Татарстан <br>по программированию на C++, Python, Golang <br>с призовым фондом в 100 000 рублей</p>
+    <li id="listAch3">участник республиканской <br>и муниципальной олимпиады <br>Республики Татарстан</li>
+    </ol>
+    </div>
+
+    <div class="desktop">
+      <h1 align="center">Достижения</h1>
+      <ol id="listAchivmentsD">
+      <li id="listAch1D">2 место на олимпиаде ZamaCode</li><br>
+      <p id="listAch2D">ZamaCode - олимпиада по Республике Татарстан по программированию <br>на C++, Python, Golang с призовым фондом в 100 000 рублей</p>
+      <li id="listAch3D">участник республиканской и муниципальной олимпиады <br>Республики Татарстан</li>
+      </ol>
+
+      <br>
+      <h2 align="center" style="margin-top: 30px; margin-bottom: 60px">Официальные ссылки</h2>
+
+      <div id="URLcon">
+      <a href="https://zamacode.ru/" target="_blank" id="ZamaCode">ZamaCode</a>
+      </div>
+    </div>
+  </main>
+  
+  <footer id="indexfooter">
+    <div id="bgfooter">
+      <p style="color:#666666; font-size: 16px; margin-left: 10px">все права защищены</p>
+        <a href="https://github.com/almazshaehov777-hub" target="_blank"><img src="github.png" class="socialNet"></a>
+    </div>
+  </footer>
+</body>
+</html>

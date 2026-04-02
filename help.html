@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <header>
+    <div class="desktop">
+    <div class="bg">
+      <nav>
+        <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+
+        <a href="help.html" class="navigation"><b>Связаться</b></a>
+        <a href="achivments.html" class="navigation"><b>Достижения</b></a>
+        <a href="portfolio.html" class="navigation"><b>Портфолио</b></a>
+        <a href="MeInfo.html" class="navigation"><b>Обо мне</b></a>
+        <a href="index.html" class="navigation"><b>Главная страница</b></a>
+      </nav>
+    </div>
+    </div>
+
+      <div class="mobile">
+        <div class="bg">
+        <nav>
+          <a href="index.html" id="logo"><b>Алмаз</b> <b id="lastName">Шаехов</b></a>
+        <select id="selnav" onchange="location.href=this.value" value="index.html">
+          <option value="index.html">Главная страница</option>
+          <option value="MeInfo.html">Обо мне</option>
+          <option value="portfolio.html">Портфолио</option>
+          <option value="achivments.html">Достижение</option>
+          <option value="help.html" selected>Связаться</option>
+        </select>
+        </nav>
+        </div>
+      </div>
+  </header>
+  
+  <main>
+    <div class="desktop">
+        <h1 align="center">Связаться</h1>
+
+    <form>
+        <h2 id="namePar">Имя</h2>
+        <label for="nameText"></label>
+        <input type="text" name="nameText" class="textHelp" id="nameText">
+        <h2 id="textPar">Сообщение</h2>
+        <br>
+        <label for="textHelp"></label>
+        <input type="text" name="textHelp" class="textHelp" id="textHelp">
+        <br>
+        <label for="buttonSubmit"></label>
+        <button name="buttonSubmit" type="submit" id="buttonSubmit"><b>Отправить</b></button>
+    </form>
+    </div>
+
+    <div class="mobile">
+    <h1 align="center">Связаться</h1>
+
+    <form>
+        <h2 id="namePar">Имя</h2>
+        <label for="nameText"></label>
+        <input type="text" name="nameText" class="textHelp" id="nameText">
+        <h2 id="textPar">Сообщение</h2>
+        <br>
+        <label for="textHelp"></label>
+        <input type="text" name="textHelp" class="textHelp" id="textHelp">
+        <br>
+        <label for="buttonSubmit"></label>
+        <button name="buttonSubmit" type="submit" id="buttonSubmit"><b>Отправить</b></button>
+    </form>
+    </div>
+    
+  </main>
+  
+  <footer id="helpfooter">
+    <div id="bgfooter">
+      <p style="color:#666666; font-size: 16px; margin-left: 10px">все права защищены</p>
+        <a href="https://github.com/almazshaehov777-hub" target="_blank"><img src="github.png" class="socialNet"></a>
+    </div>
+  </footer>
+</body>
+</html>
