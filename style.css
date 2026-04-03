@@ -1186,7 +1186,7 @@ form{
 
 
 /*Палншеты, основная страница*/
-@media(min-width: 768px){
+@media(min-width: 577px){
     @media(max-width: 1023px){
 #logo {
   text-decoration:none;
