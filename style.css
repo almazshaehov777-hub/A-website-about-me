@@ -1,12 +1,93 @@
-/*ПК*/
-@media (min-width: 1024px){
-/*Main Page, PC*/
+#listAll{
+    color: white;
+    font-size: 24px;
+    float: right;
+    margin-right: 10px;
+}
+.list{
+    padding: 25px;
+    background: #2e2e2e;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+#list1{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#list2{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 2.25s ease;
+    animation-fill-mode: forwards;
+}
+#list3{
+    opacity: 0;
+    margin-top: 20%;
+    animation: listAnimA 3s ease;
+    animation-fill-mode: forwards;
+}
+#bgfooter{
+    background: black;
+    margin-top: auto;
+    height: 80px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.socialNet{
+    width: 35px;
+    height: 35px;
+    float:right;
+    margin-top: -25px;
+    margin-right: 5px;
+}
+.bg{
+    background-color: black;
+    border: 2px double #4a4a4a;
+}
+#start{
+    color: white;
+    font-size: 24px;
+    float: right;
+    margin-top: 10%;
+    margin-left: 5px;
+    opacity: 0;
+    animation: startAnim 1.5s ease;
+    animation-fill-mode: forwards;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+#bgText{
+    display: inline-block;
+    background: #2e2e2e;
+    padding: 25px;
+    border-radius: 7px;
+}
+#lastName{
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name{
+    color:#44fe45;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: rgb(25,25,25);
+}
+
 #logo {
   text-decoration:none;
   color:white;
   font-family: sans-serif;
-  font-size: 16px;
-  background: -webkit-linear-gradient(top, white, #5d5b5b);
+  font-size: 18px;
+  background: -webkit-linear-gradient(white, #5d5b5b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -21,24 +102,317 @@
     animation: navAnim 0.25s;
     animation-fill-mode: forwards;
 }
-.bg{
-    background-color: black;
-    padding: 25px;
-    border: 2px double #4a4a4a;
+#selnav{
+    float: right;
+    font-size: 16px;
+    background: black;
+    color: #9c9c9c;
+    border-radius: 5px;
+}
+#selnav:hover{
+    animation: selAnim 0.4s;
+    animation-fill-mode: forwards;
+}
+.cardcontainer{
+    display: flex;
+}
+.card{
+    display: flex;
+    flex: 1;
+    transition: .3s all ease;
+    height: 100px;
+    background: gray;
+    margin-left: 15px;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 30px;
+    animation: projAnim 2s;
+    animation-fill-mode: forwards;
+}
+#lastCard{
+    margin-right: 15px;
+}
+.card:hover{
+    flex: 2;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#portfoliofooter{
+    min-height: 90vh;
+}
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    animation: portAnim 1.5s;
+    animation-fill-mode: forwards;
 }
 html, body{
     padding: 0px;
     margin: 0px;
 }
+
+
+
+
+
+
+
+
+/*MeInfo*/
+.selText{
+    display: flex;
+    justify-content: center;
+}
+.dist{
+    display: inline-block;
+    color: white;
+    margin-top: 40px;
+    font-size: 28px;
+    background: #2e2e2e;
+    padding: 25px;
+    border-radius: 7px;;
+    animation: divAnim 2.5s ease;
+    animation-fill-mode: forwards;
+}
+h2{
+    color: white;
+}
+.langProg{
+    display: flex;
+    gap: 30px;
+}
+.cpp, .cs, .RU, .EN, .JP{
+    height: 350px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.cpp>img, .cs>img{
+    width: 70px;
+    height: 70px;
+}
+.cpp{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+.cs{
+    background: #a31aff;
+}
+.RU{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.EN{
+    background-image: url("EN.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.JP{
+    background-image: url("JP.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cpp>img, .cs>img{
+    position: relative;
+    left: 33%;
+    top: 35%;
+}
+.nameLangProg{
+    display: flex;
+    color: white;
+    gap: 30px;
+}
+.nameLang{
+    margin-right: 20px;
+    flex: 1;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+#nameCpp{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+#nameCs{
+    background: #a31aff;
+}
+#nameRUS{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+#nameEN{
+    background: #3a365d;
+}
+#nameJP{
+    background: white;
+    color: black;
+}
+.containerLang{
+    display: flex;
+    gap: 30px;
+}
+.langRate{
+    color: white;
+    margin-right: 20px;
+    height: 40px;
+    margin-top: 10px;
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+#cppRate{
+    margin-left: 20px;
+    background: #67b0fe;
+}
+#csRate{
+    background: #a31aff;
+}
+#RUSRate{
+    background-image: url("RU.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+#ENRate{
+    background: #3a365d;
+}
+#JPRate{
+    color: black;
+    background: white;
+}
+
+#cppD, #cppRate{
+    animation: divAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#csD, #csRate{
+    animation: divAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#RUD, #RUSRate{
+    animation: divAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#END, #ENRate{
+    animation: divAnim 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#JPD, #JPRate{
+    animation: divAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#nameCpp{
+    animation: nameAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#nameCs{
+    animation: nameAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#nameRUS{
+    animation: nameAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#nameEN{
+    animation: nameAnim 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#nameJP{
+    animation: nameAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+h2{
+    animation: listAnimation 2s ease;
+    animation-fill-mode: forwards;
+}
+.containerInfo{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.cardInfo{
+    flex: 1;
+    height: 350px;
+    background: #424242;
+    border-radius: 10px;
+    color: #919191;
+    border: 4px solid black;
+    transition: .3s all ease;
+    animation: helpAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+.cardInfo>b{
+    font-size: 24px;
+}
+.cardInfo>img{
+    position: relative;
+    left: 3%;
+    top: 5%;
+}
+.cardInfo>p{
+    font-size: 26px;
+    font-family: FreeMono, monospace;
+}
+.containerInCard{
+    display: flex;
+    width: 100%;
+}
+.cardInCard{
+    flex: 1;
+    height: 20px;
+    background: #7a7a7a;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2.5px solid black;
+    color: white;
+}
+.cardInfo:hover{
+    background: #e3e3e3;
+    color: black;
+    box-shadow: 0 12px 36px rgba(192, 192, 192, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ПК*/
+@media (min-width: 1024px){
+/*Main Page, PC*/
+.bg{
+    padding: 25px;
+}
+
 .desktop{
     display:block;
 }
 .mobile{
     display: none;
 }
-.plan{
-    display: none;
-}
+
 
 
 @keyframes navAnim{
@@ -131,88 +505,12 @@ html, body{
 }
 
 
-.name{
-    color:#44fe45;
-    font-family: 'Times New Roman', Times, serif;
-}
-body{
-    background: rgb(25,25,25);
-}
+
 #start{
-    color: white;
-    font-size: 24px;
-    float: right;
-    padding: 25px;
-    background: #2e2e2e;
-    margin-top: 10%;
-    opacity: 0;
-    animation: startAnim 1.5s ease;
-    animation-fill-mode: forwards;
-    border-radius: 7px;
     margin-left: 53%;
 }
-#lastName{
-    background: -webkit-linear-gradient(top, white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#imageStart{
-    clip-path: polygon(50% 100%, 10% 100%, 50% 0%, 120% 15%);
-    animation: startAnim 2.5s ease;
-    animation-fill-mode: forwards;
-    position: absolute;
-    top: -1%;
-    left: -5%;
-    display:block;
-}
-#bgfooter{
-    background: black;
-    margin-top: auto;
-    height: 80px;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    min-height: 60vh;
-    width: 100%;
-}
-.socialNet{
-    width: 35px;
-    height: 35px;
-    float:right;
-    margin-top: -25px;
-    margin-right: 5px;
-}
-#indexInfoList{
-    color: white;
-    font-size: 24px;
-    float: right;
-    margin-right: 10px;
-}
-.indexInfoListCL{
-    padding: 25px;
-    background: #2e2e2e;
-    margin-bottom: 15px;
-    border-radius: 7px;
-}
-#list1D{
-    opacity: 0;
-    margin-top: 20%;
-    animation: listAnimA 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#list2D{
-    opacity: 0;
-    margin-top: 20%;
-    animation: listAnimA 2.25s ease;
-    animation-fill-mode: forwards;
-}
-#list3D{
-    opacity: 0;
-    margin-top: 20%;
-    animation: listAnimA 3s ease;
-    animation-fill-mode: forwards;
-}
+
+
 
 
 
@@ -220,289 +518,94 @@ footer{
 
 
 /*MeInfo, desktop*/
-h1{
-    color: white;
-    animation: startAnim 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#selText{
+.selText{
     display: flex;
     justify-content: center;
 }
-#distD{
-    display: inline-block;
-    color: white;
+.dist{
     margin-top: 40px;
-    font-size: 28px;
-    background: #2e2e2e;
     padding: 25px;
-    border-radius: 7px;;
-    animation: divAnim 2.5s ease;
-    animation-fill-mode: forwards;
-}
-.greenD{
-    color:#44fe45;
 }
 h2{
     color: white;
 }
-#langProgD{
-    display: flex;
+.langProg{
     gap: 30px;
 }
-#cppD, #csD, #RUD, #END, #JPD{
-    height: 350px;
-    flex: 1;
+.cpp, .cs, .RU, .EN, .JP{
     margin-right: 20px;
-    border-radius: 10px;
     margin-top: 10px;
 }
-#cppD>img, #csD>img{
+.cpp>img, .cs>img{
     width: 70px;
     height: 70px;
 }
-#cppD{
+.cpp{
     margin-left: 20px;
-    background: #67b0fe;
 }
-#csD{
-    background: #a31aff;
-}
-#RUD{
-    background-image: url("RU.png");
-    background-repeat: no-repeat;
-    background-size: 260%;
-}
-#END{
-    background-image: url("EN.jpg");
-    background-size: cover;
-    background-position: center;
-}
-#JPD{
-    background-image: url("JP.jpg");
-    background-size: cover;
-    background-position: center;
-}
-#cppD>img, #csD>img{
-    position: relative;
+.cpp>img, .cs>img{
     left: 33%;
     top: 35%;
 }
-#nameLangProg{
-    display: flex;
-    color: white;
+.nameLangProg{
     gap: 30px;
 }
 .nameLang{
     margin-right: 20px;
-    flex: 1;
-    border-radius: 10px;
-    height: 40px;
     text-align: center;
-    line-height: 40px;
-    font-size: 24px;
 }
 #nameCpp{
     margin-left: 20px;
-    background: #67b0fe;
 }
-#nameCs{
-    background: #a31aff;
-}
-#nameRUS{
-    background-image: url("RU.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-}
-#nameEN{
-    background: #3a365d;
-}
-#nameJP{
-    background: white;
-    color: black;
-}
-#containerLang{
-    display: flex;
+.containerLang{
     gap: 30px;
 }
 .langRate{
-    color: white;
     margin-right: 20px;
-    height: 40px;
     margin-top: 10px;
-    flex: 1;
-    border-radius: 10px;
     text-align: center;
-    line-height: 40px;
-    font-size: 24px;
 }
 #cppRate{
     margin-left: 20px;
-    background: #67b0fe;
-}
-#csRate{
-    background: #a31aff;
-}
-#RUSRate{
-    background-image: url("RU.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: bottom;
-}
-#ENRate{
-    background: #3a365d;
-}
-#JPRate{
-    color: black;
-    background: white;
-}
-
-#cppD, #cppRate{
-    animation: divAnim 1s ease;
-    animation-fill-mode: forwards;
-}
-#csD, #csRate{
-    animation: divAnim 1.25s ease;
-    animation-fill-mode: forwards;
-}
-#RUD, #RUSRate{
-    animation: divAnim 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#END, #ENRate{
-    animation: divAnim 1.75s ease;
-    animation-fill-mode: forwards;
-}
-#JPD, #JPRate{
-    animation: divAnim 2s ease;
-    animation-fill-mode: forwards;
-}
-#nameCpp{
-    animation: nameAnim 1s ease;
-    animation-fill-mode: forwards;
-}
-#nameCs{
-    animation: nameAnim 1.25s ease;
-    animation-fill-mode: forwards;
-}
-#nameRUS{
-    animation: nameAnim 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#nameEN{
-    animation: nameAnim 1.75s ease;
-    animation-fill-mode: forwards;
-}
-#nameJP{
-    animation: nameAnim 2s ease;
-    animation-fill-mode: forwards;
-}
-h2{
-    animation: listAnimation 2s ease;
-    animation-fill-mode: forwards;
 }
 .containerInfo{
-    display: flex;
     gap: 15px;
     width: 100%;
 }
 .cardInfo{
-    flex: 1;
-    height: 350px;
-    background: #424242;
     margin-top: 100px;
     margin-right: 25px;
     margin-left: 25px;
-    border-radius: 10px;
-    color: #919191;
-    border: 4px solid black;
-    transition: .3s all ease;
-    animation: helpAnim 1.5s ease;
-    animation-fill-mode: forwards;
 }
 .cardInfo>b{
     margin-left: 20px;
-    font-size: 24px;
 }
 .cardInfo>img{
-    position: relative;
     left: 3%;
     top: 5%;
 }
 .cardInfo>p{
-    font-size: 26px;
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 5px;
-    font-family: FreeMono, monospace;
 }
 .containerInCard{
-    display: flex;
     width: 100%;
 }
 .cardInCard{
-    flex: 1;
-    height: 20px;
-    background: #7a7a7a;
-    font-size: 18px;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 5px;
-    border-radius: 15px;
     margin-top: auto;
     text-align: center;
-    border: 2.5px solid black;
-    color: white;
 }
 .cardInfo:hover{
-    background: #e3e3e3;
     margin-top: 60px;
-    color: black;
-    box-shadow: 0 12px 36px rgba(192, 192, 192, 0.2);
 }
 #znania{
     margin-top: 20px;
     margin-bottom: 100px;
 }
 
-
-
-
-
-
-/*Portfolio, desktop*/
-.cardcontainer{
-    display: flex;
-}
-.cardD{
-    display: flex;
-    flex: 1;
-    transition: .3s all ease;
-    height: 100px;
-    background: gray;
-    margin-left: 15px;
-    border-radius: 7px;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: white;
-    margin-top: 30px;
-    animation: projAnim 2s;
-    animation-fill-mode: forwards;
-}
-#lastCard{
-    margin-right: 15px;
-}
-.cardD:hover{
-    flex: 2;
-    background: white;
-    color: black;
-    cursor: pointer;
-}
-#portfoliofooter{
-    min-height: 90vh;
-}
 
 
 
@@ -628,43 +731,407 @@ html{
     display:block;
 }
 
-#logo {
-  text-decoration:none;
-  color:white;
-  font-family: sans-serif;
-  font-size: 18px;
-  background: -webkit-linear-gradient(white, #5d5b5b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .desktop{
     display:none;
 }
 .mobile{
     display: block;
 }
-.plan{
-    display: none;
+.bg{
+    padding: 35px;
 }
-.navigation{
-    text-decoration: none;
-    font-size: 16px;
-    color: #9c9c9c;
-    margin-left: 25px;
-    float: right;
+
+
+@keyframes navAnim{
+    0%{
+        font-size: 16px;
+        color: #9c9c9c;
+    }
+    100%{
+        font-size: 17px;
+        color: white;
+    }
 }
-.navigation:hover{
-    animation: navAnim 0.25s;
+@keyframes startAnim{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 100%;
+    }
+}
+@keyframes selAnim{
+    0%{
+        color: #9c9c9c;
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes listAnim1{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes listAnim2{
+    0%{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes listAnim3{
+    0%{
+        margin-top: 30%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes portAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 7%;
+    }
+}
+@keyframes achivmentsAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 5%;
+    }
+}
+@keyframes h2Anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes startAnim2{
+    0%{
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 25px;
+    }
+}
+@keyframes h2ZAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 15px;
+    }
+}
+@keyframes langProg{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes lang{
+    0%{
+        opacity: 0;
+        margin-top: 20%
+    }
+    100%{
+        opacity: 0.9;
+        margin-top: 0;
+    }
+}
+@keyframes textAnim{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes textHelpAnim{
+    0%{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 20px;
+        opacity: 1;
+    }
+}
+#start{
+    margin-top: 10%;
+    margin-left: 5px;
+}
+
+#list1{
+    animation: listAnim1 0.75s;
     animation-fill-mode: forwards;
 }
-.bg{
-    background-color: black;
-    padding: 35px;
-    border: 2px double #4a4a4a;
+#list2{
+    animation: listAnim2 1s;
+    animation-fill-mode: forwards;
 }
-html, body{
-    padding: 0px;
-    margin: 0px;
+#list3{
+    animation: listAnim3 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*Mobile, Portfolio*/
+
+#portfoliofooter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 79vh;
+}
+
+
+
+
+/*Достижения, Mobile*/
+#listAchivments{
+    color: white;
+    font-size: 20px;
+}
+#listAchivments>li{
+    background: gray;
+    padding: 20px;
+    margin-right: 90px;
+    border-radius: 7px;
+}
+#listAchivments>p{
+    margin-left: 20px;
+    background: #4a4a4a;
+    margin-right: 25px;
+    padding: 15px;
+    border-radius: 7px;
+}
+#listAch1{
+    animation: achivmentsAnim 1s;
+    animation-fill-mode: forwards;
+}
+#listAch2{
+    animation: achivmentsAnim 1.25s;
+    animation-fill-mode: forwards;
+}
+#listAch3{
+    animation: achivmentsAnim 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*MeInfo, mobile*/
+.selText{
+    display: flex;
+    justify-content: center;
+}
+.dist{
+    margin-top: 40px;
+    padding: 25px;
+}
+.langProg{
+    gap: 10px;
+}
+.cpp, .cs, .RU, .EN, .JP{
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 35px;
+}
+.cpp>img, .cs>img{
+    width: 70px;
+    height: 70px;
+}
+.cpp{
+    margin-left: 20px;
+}
+.cpp>img, .cs>img{
+    left: 27%;
+    top: 10%;
+    width: 25px;
+    height: 25px;
+}
+.nameLangProg{
+    gap: 30px;
+}
+.nameLang{
+    margin-right: 20px;
+    text-align: center;
+}
+#nameCpp{
+    margin-left: 20px;
+}
+.containerLang{
+    gap: 10px;
+}
+.langRate{
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+#cppRate{
+    margin-left: 20px;
+}
+.containerInfo{
+    display: block;
+    gap: 15px;
+    width: 100%;
+}
+.cardInfo{
+    margin-top: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.cardInfo>b{
+    margin-left: 20px;
+}
+.cardInfo>img{
+    left: 3%;
+    top: 5%;
+}
+.cardInfo>p{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.containerInCard{
+    width: 100%;
+}
+.cardInCard{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: auto;
+    text-align: center;
+}
+.cardInfo:hover{
+    margin-top: 60px;
+}
+#znania{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.nameLangProg{
+    opacity: 0;
+}
+.langRate{
+    opacity: 1;
+    font-size: 16px;
+}
+
+
+
+/*help, Mobile*/
+form{
+    text-align: center;
+}
+.textHelp{
+    border-radius: 7px;
+}
+#buttonSubmit{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background: #969696;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;;
+    animation: langProg 2s;
+    animation-fill-mode: forwards;
+}
+#namePar{
+    margin-top: 40px;
+    animation: textHelpAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#textPar{
+    margin-bottom: 0px;
+    animation: textHelpAnim 1.25s ease;
+    animation-fill-mode: forwards;
+}
+#nameText{
+    width: 40%;
+    height: 20px;
+    animation: langProg 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#textHelp{
+    width: 60%;
+    height: 30px;
+    margin-bottom: 30px;
+    animation: langProg 1.75s ease;
+    animation-fill-mode: forwards;
+}
+#helpfooter{
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Палншеты, основная страница*/
+@media(min-width: 577px){
+    @media(max-width: 1023px){
+.desktop{
+    display:none;
+}
+.mobile{
+    display: block;
+}
+.bg{
+    padding: 35px;
 }
 
 
@@ -814,466 +1281,22 @@ html, body{
 }
 
 
-.name{
-    color:#44fe45;
-    font-family: 'Times New Roman', Times, serif;
-}
-body{
-    background: rgb(25,25,25);
-}
+
+
 #start{
-    color: white;
-    font-size: 20px;
-    float: right;
-    padding: 25px;
-    background: #2e2e2e;
     margin-top: 10%;
-    margin-left: 5px;
-    opacity: 0;
-    animation: startAnim 1.5s ease;
-    animation-fill-mode: forwards;
-    border-radius: 7px;
-    display: inline;
-}
-#lastName{
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#imageStartMobile{
-    clip-path: polygon(40% 100%, -50% 50%, 25% 0%, 60% 7.5%, 80% 50%);
-    animation: startAnim 2.5s ease;
-    animation-fill-mode: forwards;
-    width: 80%;
-    height: 80%;
-}
-#bgfooter{
-    background: black;
-    margin-top: auto;
-    height: 80px;
-}
-#indexfooter{
-    display: flex;
-    flex-direction: column;
-    min-height: 49vh;
-    width: 100%;
-}
-.socialNet{
-    width: 35px;
-    height: 35px;
-    float:right;
-    margin-top: -30px;
-    margin-right: 5px;
-}
-#selnav{
-    float: right;
-    font-size: 16px;
-    background: black;
-    color: #9c9c9c;
-    border-radius: 5px;
-}
-#selnav:hover{
-    animation: selAnim 0.4s;
-    animation-fill-mode: forwards;
-}
-.list{
-    color: white;
-    white-space: nowrap;
-    font-size: 20px;
-    background: #2e2e2e;
-    padding: 25px;
-    margin-top: 15px;
-    border-radius: 7px;
-    opacity: 0;
-}
-#listAll{
-    display: inline-block;
+    margin-left: 50%;
 }
 #list1{
-    animation: listAnim1 0.75s;
+    animation: listAnim1 1.25s;
     animation-fill-mode: forwards;
 }
 #list2{
-    animation: listAnim2 1s;
+    animation: listAnim2 1.5s;
     animation-fill-mode: forwards;
 }
 #list3{
-    animation: listAnim3 1.5s;
-    animation-fill-mode: forwards;
-}
-
-
-
-/*Mobile, Portfolio*/
-h1{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    animation: portAnim 1.5s;
-    animation-fill-mode: forwards;
-}
-.cardcontainer{
-    display: flex;
-}
-.card{
-    background: gray;
-    height: 100px;
-    margin-left: 10px;
-    margin-top: 40px;
-    border-radius: 12px;
-    flex: 1;
-    transition: .3s all ease;
-    animation: portAnim 2s;
-    animation-fill-mode: forwards;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card:hover{
-    flex: 2;
-    background: white;
-}
-#lastCard{
-    margin-right: 10px;
-}
-#portfoliofooter{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 79vh;
-}
-#firstCard>b, #cardMid>b, #lastCard>b{
-    color: white;
-}
-#firstCard:hover>b{
-    animation: textAnim 0.3s ease;
-    animation-fill-mode: forwards;
-}
-#cardMid:hover>b{
-    animation: textAnim 0.3s ease;
-    animation-fill-mode: forwards;
-}
-#lastCard:hover>b{
-    animation: textAnim 0.3s ease;
-    animation-fill-mode: forwards;
-}
-
-
-
-
-/*Достижения, Mobile*/
-#listAchivments{
-    color: white;
-    font-size: 20px;
-}
-#listAchivments>li{
-    background: gray;
-    padding: 20px;
-    margin-right: 90px;
-    border-radius: 7px;
-}
-#listAchivments>p{
-    margin-left: 20px;
-    background: #4a4a4a;
-    margin-right: 25px;
-    padding: 15px;
-    border-radius: 7px;
-}
-#listAch1{
-    animation: achivmentsAnim 1s;
-    animation-fill-mode: forwards;
-}
-#listAch2{
-    animation: achivmentsAnim 1.25s;
-    animation-fill-mode: forwards;
-}
-#listAch3{
-    animation: achivmentsAnim 1.5s;
-    animation-fill-mode: forwards;
-}
-
-
-
-
-/*MeInfo, mobile*/
-#dist{
-    font-size: 20px;
-    color: white;
-    margin-left: 10px;
-}
-h2{
-    color: white;
-}
-#listDist{
-    color: white;
-    font-size: 24px;
-    margin-left: 10px;
-}
-#cpp{
-    background: #67b0fe;
-    animation: langProg 1s ease;
-    animation-fill-mode: forwards;
-}
-#cs{
-    background: #a31aff;
-    animation: langProg 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#langProg{
-    color: white;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    text-align: center;
-}
-#cs>img, #cpp>img{
-    width: 35px;
-    height: 35px;
-    position: relative;
-    top: 7px;
-    left: 0px;
-}
-#RU, #EN, #JP, #cpp, #cs{
-    position: relative;
-    margin-left: 10px;
-    border-radius: 7px;
-    height: 117px;
-    color: black;
-    margin-top: 20%;
-    opacity: 0;
-    flex: 1;
-}
-#RU{
-    background-image: url("RU.png");
-    background-size: cover;
-    animation: lang 2s ease;
-    animation-fill-mode: forwards;
-}
-#EN{
-    background-image: url("EN.jpg");
-    background-position: center;
-    background-size: 235%;
-    animation: lang 2.5s ease;
-    animation-fill-mode: forwards;
-}
-#JP{
-    background-image: url("JP.jpg");
-    background-position: center;
-    background-size: 226.5%;
-    margin-right: 15px;
-    animation: lang 3s ease;
-    animation-fill-mode: forwards;
-}
-#RU>b, #EN>b, #JP>b{
-    position: relative;
-    top: 39%;
-}
-#h2Z{
-    margin-top: 15px;
-    animation: h2ZAnim 2s ease;
-    animation-fill-mode: forwards;
-}
-#meInfoList1{
-    animation: listAnim1 1.25s ease;
-    animation-fill-mode: forwards;
-    padding: 25px;
-    border-radius: 7px;
-    background: #7a7a7a;
-    margin-right: 90px;
-}
-#meInfoList2{
-    animation: listAnim1 1.5s ease;
-    animation-fill-mode: forwards;
-    padding: 20px;
-    border-radius: 7px;
-    background: #7a7a7a;
-    margin-right: 90px;
-}
-#meInfoList3{
-    animation: listAnim1 1.75s ease;
-    animation-fill-mode: forwards;
-    padding: 20px;
-    border-radius: 7px;
-    background: #7a7a7a;
-    margin-right: 90px;
-}
-#dist{
-    font-size: 24px;
-    float: right;
-    background: #7a7a7a;
-    padding: 25px;
-    border-radius: 7px;
-    margin-bottom: 50px;
-    animation: startAnim2 2s ease;
-    animation-fill-mode: forwards;
-}
-#mainWork{
-    opacity: 0;
-    animation: h2Anim 2s;
-    animation-fill-mode: forwards;
-}
-
-
-
-/*help, Mobile*/
-form{
-    text-align: center;
-}
-.textHelp{
-    border-radius: 7px;
-}
-#buttonSubmit{
-    width: 100px;
-    height: 30px;
-    border-radius: 7px;
-    background: #969696;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;;
-    animation: langProg 2s;
-    animation-fill-mode: forwards;
-}
-#namePar{
-    margin-top: 40px;
-    animation: textHelpAnim 1s ease;
-    animation-fill-mode: forwards;
-}
-#textPar{
-    margin-bottom: 0px;
-    animation: textHelpAnim 1.25s ease;
-    animation-fill-mode: forwards;
-}
-#nameText{
-    width: 40%;
-    height: 20px;
-    animation: langProg 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#textHelp{
-    width: 60%;
-    height: 30px;
-    margin-bottom: 30px;
-    animation: langProg 1.75s ease;
-    animation-fill-mode: forwards;
-}
-#helpfooter{
-    display: flex;
-    flex-direction: column;
-    min-height: 65vh;
-    width: 100%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Палншеты, основная страница*/
-@media(min-width: 577px){
-    @media(max-width: 1023px){
-#logo {
-  text-decoration:none;
-  color:white;
-  font-family: sans-serif;
-  font-size: 18px;
-  background: -webkit-linear-gradient(white, #5d5b5b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.desktop{
-    display:none;
-}
-.mobile{
-    display: none;
-}
-.plan{
-    display: block;
-}
-.navigation{
-    text-decoration: none;
-    font-size: 16px;
-    color: #9c9c9c;
-    margin-left: 25px;
-    float: right;
-}
-.navigation:hover{
-    animation: navAnim 0.25s;
-    animation-fill-mode: forwards;
-}
-.bg{
-    background-color: black;
-    padding: 35px;
-    border: 2px double #4a4a4a;
-}
-html, body{
-    padding: 0px;
-    margin: 0px;
-}
-.name{
-    color:#44fe45;
-    font-family: 'Times New Roman', Times, serif;
-}
-body{
-    background: rgb(25,25,25);
-}
-#start{
-    color: white;
-    font-size: 20px;
-    float: right;
-    padding: 25px;
-    background: #2e2e2e;
-    margin-top: 10%;
-    margin-left: 5px;
-    opacity: 0;
-    animation: startAnim 1.5s ease;
-    animation-fill-mode: forwards;
-    border-radius: 7px;
-    display: inline;
-}
-#bgfooter{
-    background: black;
-    margin-top: auto;
-    height: 80px;
-}
-#indexfooter{
-    display: flex;
-    flex-direction: column;
-    min-height: 49vh;
-    width: 100%;
-}
-.socialNet{
-    width: 35px;
-    height: 35px;
-    float:right;
-    margin-top: -30px;
-    margin-right: 5px;
-}
-#selnav{
-    float: right;
-    font-size: 16px;
-    background: black;
-    color: #9c9c9c;
-    border-radius: 5px;
-}
-#selnav:hover{
-    animation: selAnim 0.4s;
+    animation: listAnim3 1.75s;
     animation-fill-mode: forwards;
 }
     }
