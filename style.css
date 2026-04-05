@@ -220,7 +220,7 @@ h2{
 }
 .cpp>img, .cs>img{
     position: relative;
-    left: 33%;
+    left: auto;
     top: 35%;
 }
 .nameLangProg{
@@ -384,6 +384,109 @@ h2{
     color: black;
     box-shadow: 0 12px 36px rgba(192, 192, 192, 0.2);
 }
+.cpp, .cs{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*achivments*/
+#listAchivments{
+    color: white;
+    font-size: 24px;
+}
+#listAch1, #listAch3{
+    background: #5d5b5b;
+}
+#listAch1{
+    animation: projAnim 1s ease;
+    animation-fill-mode: forwards;
+}
+#listAch2{
+    background: #3a3a3a;
+    animation: projAnim 1.5s ease;
+    animation-fill-mode: forwards;
+}
+#listAch3{
+    animation: projAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#listAch1, #listAch2, #listAch3{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+#URLcon{
+    text-align: center;
+}
+#ZamaCode{
+    background: #4a4a4a;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    font-size: 22px;
+    transition: .4s;
+    animation: nameAnim 2s ease;
+    animation-fill-mode: forwards;
+}
+#ZamaCode:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+
+
+/*Help*/
+form{
+    text-align: center;
+    padding: 80px;
+    background: #2e2e2e;
+    display: inline-block;
+    border-radius: 25px;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buttonSubmit{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    animation: helpAnim 2s;
+    animation-fill-mode: forwards;
+}
+#nameText{
+    width: 200px;
+    border-radius: 3px;
+    animation: helpAnim 1s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+    height: 25px
+}
+#textHelp{
+    width: 300px;
+    height: 50px;
+    border-radius: 3px;
+    animation: helpAnim 1.5s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+
+
+
+
 
 
 
@@ -412,6 +515,8 @@ h2{
 .mobile{
     display: none;
 }
+
+
 
 
 
@@ -503,12 +608,12 @@ h2{
         background: white;
     }
 }
-
-
-
 #start{
     margin-left: 53%;
 }
+
+
+
 
 
 
@@ -544,7 +649,6 @@ h2{
     margin-left: 20px;
 }
 .cpp>img, .cs>img{
-    left: 33%;
     top: 35%;
 }
 .nameLangProg{
@@ -578,14 +682,16 @@ h2{
     margin-left: 25px;
 }
 .cardInfo>b{
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
+    display: block;
 }
 .cardInfo>img{
     left: 3%;
     top: 5%;
 }
 .cardInfo>p{
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 10px;
     margin-right: 5px;
 }
@@ -611,94 +717,35 @@ h2{
 
 
 
+
+
+
 /*Achivment, desktop*/
-#listAchivmentsD{
-    color: white;
-    font-size: 24px;
-}
-#listAch1D, #listAch3D{
-    background: #5d5b5b;
-}
-#listAch1D{
-    animation: projAnim 1s ease;
-    animation-fill-mode: forwards;
-}
-#listAch2D{
+#listAch2{
     margin-top: 60px;
     margin-left: 70px;
-    background: #3a3a3a;
-    animation: projAnim 1.5s ease;
-    animation-fill-mode: forwards;
 }
-#listAch3D{
+#listAch3{
     margin-top: 60px;
-    animation: projAnim 2s ease;
+}
+h1{
+    animation: projAnim 1.5s;
     animation-fill-mode: forwards;
 }
-#listAch1D, #listAch2D, #listAch3D{
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
-}
-#URLcon{
-    text-align: center;
-}
-#ZamaCode{
-    background: #4a4a4a;
-    padding: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    display: inline;
-    font-size: 22px;
-    transition: .4s;
-    animation: nameAnim 2s ease;
-    animation-fill-mode: forwards;
-}
-#ZamaCode:hover{
-    background: white;
-    color: black;
-}
+
+
+
 
 
 
 
 /*help, desktop*/
-form{
-    text-align: center;
-    padding: 80px;
-    background: #2e2e2e;
-    display: inline-block;
-    border-radius: 25px;
-}
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #buttonSubmit{
     margin-top: 30px;
-    width: 100px;
-    height: 30px;
-    border-radius: 7px;
-    animation: helpAnim 2s;
-    animation-fill-mode: forwards;
 }
-#nameText{
-    width: 200px;
-    border-radius: 3px;
-    animation: helpAnim 1s;
-    animation-fill-mode: forwards;
-    border-radius: 30px;
-    height: 25px
-}
-#textHelp{
-    width: 300px;
-    height: 50px;
-    border-radius: 3px;
-    animation: helpAnim 1.5s;
-    animation-fill-mode: forwards;
-    border-radius: 30px;
+.svaz{
+    display: flex;
+    justify-content: center;
 }
 }
 
@@ -886,6 +933,110 @@ html{
         opacity: 1;
     }
 }
+@keyframes projAnim{
+    0%{
+        opacity: 0;
+        margin-top: 15%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+@keyframes navAnim{
+    0%{
+        font-size: 20px;
+        color: #9c9c9c;
+    }
+    100%{
+        font-size: 21px;
+        color: white;
+    }
+}
+@keyframes startAnim{
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 15px;
+        opacity: 100%;
+    }
+}
+@keyframes listAnimA{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes divAnim{
+    0%{
+        opacity: 0;
+        margin-top: 20%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+@keyframes nameAnim{
+    0%{
+        opacity: 0;
+        margin-top: 5%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes listAnimation{
+    0%{
+        opacity: 0;
+        margin-top: 10%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+@keyframes projAnim{
+    0%{
+        opacity: 0;
+        margin-top: 15%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+@keyframes helpAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes cardAnim{
+    0%{
+        margin-top: 100px;
+        background:#919191;
+    }
+    100%{
+        margin-top: 30px;
+        background: white;
+    }
+}
+
+
+
+
+
+
 #start{
     margin-top: 10%;
     margin-left: 5px;
@@ -919,34 +1070,11 @@ html{
 
 
 /*Достижения, Mobile*/
-#listAchivments{
-    color: white;
-    font-size: 20px;
-}
 #listAchivments>li{
-    background: gray;
-    padding: 20px;
     margin-right: 90px;
-    border-radius: 7px;
 }
 #listAchivments>p{
     margin-left: 20px;
-    background: #4a4a4a;
-    margin-right: 25px;
-    padding: 15px;
-    border-radius: 7px;
-}
-#listAch1{
-    animation: achivmentsAnim 1s;
-    animation-fill-mode: forwards;
-}
-#listAch2{
-    animation: achivmentsAnim 1.25s;
-    animation-fill-mode: forwards;
-}
-#listAch3{
-    animation: achivmentsAnim 1.5s;
-    animation-fill-mode: forwards;
 }
 
 
@@ -977,7 +1105,6 @@ html{
     margin-left: 20px;
 }
 .cpp>img, .cs>img{
-    left: 27%;
     top: 10%;
     width: 25px;
     height: 25px;
@@ -1053,51 +1180,8 @@ html{
 
 
 /*help, Mobile*/
-form{
-    text-align: center;
-}
-.textHelp{
-    border-radius: 7px;
-}
 #buttonSubmit{
-    width: 100px;
-    height: 30px;
-    border-radius: 7px;
-    background: #969696;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;;
-    animation: langProg 2s;
-    animation-fill-mode: forwards;
-}
-#namePar{
-    margin-top: 40px;
-    animation: textHelpAnim 1s ease;
-    animation-fill-mode: forwards;
-}
-#textPar{
-    margin-bottom: 0px;
-    animation: textHelpAnim 1.25s ease;
-    animation-fill-mode: forwards;
-}
-#nameText{
-    width: 40%;
-    height: 20px;
-    animation: langProg 1.5s ease;
-    animation-fill-mode: forwards;
-}
-#textHelp{
-    width: 60%;
-    height: 30px;
-    margin-bottom: 30px;
-    animation: langProg 1.75s ease;
-    animation-fill-mode: forwards;
-}
-#helpfooter{
-    display: flex;
-    flex-direction: column;
-    min-height: 65vh;
-    width: 100%;
+    margin-top: 30px;
 }
 }
 
@@ -1135,13 +1219,18 @@ form{
 }
 
 
+
+
+
+
+
 @keyframes navAnim{
     0%{
-        font-size: 16px;
+        font-size: 20px;
         color: #9c9c9c;
     }
     100%{
-        font-size: 17px;
+        font-size: 21px;
         color: white;
     }
 }
@@ -1155,130 +1244,77 @@ form{
         opacity: 100%;
     }
 }
-@keyframes selAnim{
-    0%{
-        color: #9c9c9c;
-    }
-    100%{
-        color: white;
-    }
-}
-@keyframes listAnim1{
-    0%{
-        margin-top: 10%;
-        opacity: 0;
-    }
-    100%{
-        margin-top: 15px;
-        opacity: 1;
-    }
-}
-@keyframes listAnim2{
-    0%{
-        margin-top: 20%;
-        opacity: 0;
-    }
-    100%{
-        margin-top: 15px;
-        opacity: 1;
-    }
-}
-@keyframes listAnim3{
-    0%{
-        margin-top: 30%;
-        opacity: 0;
-    }
-    100%{
-        margin-top: 15px;
-        opacity: 1;
-    }
-}
-@keyframes portAnim{
+@keyframes listAnimA{
     0%{
         opacity: 0;
         margin-top: 20%;
     }
     100%{
         opacity: 1;
-        margin-top: 7%;
+        margin-top: 0;
     }
 }
-@keyframes achivmentsAnim{
+@keyframes divAnim{
     0%{
         opacity: 0;
         margin-top: 20%;
     }
     100%{
         opacity: 1;
+        margin-top: 20px;
+    }
+}
+@keyframes nameAnim{
+    0%{
+        opacity: 0;
         margin-top: 5%;
     }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
-@keyframes h2Anim{
+@keyframes listAnimation{
     0%{
         opacity: 0;
+        margin-top: 10%;
     }
     100%{
         opacity: 1;
-    }
-}
-@keyframes startAnim2{
-    0%{
-        opacity: 0;
-        margin-bottom: 50px;
-    }
-    100%{
-        opacity: 1;
-        margin-bottom: 25px;
-    }
-}
-@keyframes h2ZAnim{
-    0%{
-        opacity: 0;
-        margin-top: 20%;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 15px;
-    }
-}
-@keyframes langProg{
-    0%{
-        opacity: 0;
-        margin-top: 20%;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 0;
-    }
-}
-@keyframes lang{
-    0%{
-        opacity: 0;
-        margin-top: 20%
-    }
-    100%{
-        opacity: 0.9;
-        margin-top: 0;
-    }
-}
-@keyframes textAnim{
-    0%{
-        color: white;
-    }
-    100%{
-        color: black;
-    }
-}
-@keyframes textHelpAnim{
-    0%{
-        margin-top: 20%;
-        opacity: 0;
-    }
-    100%{
         margin-top: 20px;
+    }
+}
+@keyframes projAnim{
+    0%{
+        opacity: 0;
+        margin-top: 15%;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+@keyframes helpAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
         opacity: 1;
     }
 }
+@keyframes cardAnim{
+    0%{
+        margin-top: 100px;
+        background:#919191;
+    }
+    100%{
+        margin-top: 30px;
+        background: white;
+    }
+}
+
+
+
 
 
 
@@ -1288,16 +1324,62 @@ form{
     margin-left: 50%;
 }
 #list1{
-    animation: listAnim1 1.25s;
+    animation: listAnimA 1.75s;
     animation-fill-mode: forwards;
 }
 #list2{
-    animation: listAnim2 1.5s;
+    animation: listAnimA 2.25s;
     animation-fill-mode: forwards;
 }
 #list3{
-    animation: listAnim3 1.75s;
+    animation: listAnimA 2.75s;
     animation-fill-mode: forwards;
+}
+
+
+
+
+
+/*MeInfo*/
+.cardInfo>b{
+    display: block;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+.cardInfo{
+    margin-top: 100px;
+    height: 400px;
+}
+.cardInfo:hover{
+    margin-top: 30px;
+}
+.cardInfo>p{
+    margin-top: 15px;
+}
+.cardInCard{
+    text-align: center;
+}
+h1{
+    animation: listAnimation 1.5s ease;
+    animation-fill-mode: forwards;
+}
+.langProg{
+    animation: listAnimation 1.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+/*Achivments, plan*/
+#listAch2{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+#listAch3{
+    margin-top: 60px;
 }
     }
 }
